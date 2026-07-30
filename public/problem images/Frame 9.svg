@@ -1,0 +1,26 @@
+<svg width="862" height="205" viewBox="0 0 862 205" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_fn_35_98)">
+<path d="M861.6 157.282C861.6 157.282 702.156 120.931 598.6 105.782C490.883 90.0244 429.913 82.6086 321.1 79.282C214.284 76.0164 47.6 88.282 47.6 88.282C47.6 88.282 203.516 54.342 305.1 48.782C438.232 41.4952 537.1 70.282 627.1 70.282C711.685 68.7404 861.6 57.282 861.6 57.282V157.282Z" fill="#FF5C22"/>
+<path d="M796.6 134.282C796.6 134.282 686.713 109.425 615.343 99.0665C541.106 88.2916 499.086 83.2207 424.093 80.946C350.477 78.713 235.6 87.1001 235.6 87.1001C235.6 87.1001 343.055 63.8922 413.066 60.0902C504.819 55.1075 572.958 74.7918 634.985 74.7918C693.28 73.7377 796.6 65.9025 796.6 65.9025V134.282Z" fill="#FF9C78"/>
+<path d="M749.6 121.282C749.6 121.282 669.095 103.054 616.808 95.4573C562.42 87.5557 531.635 83.837 476.694 82.1689C422.761 80.5314 338.6 86.6819 338.6 86.6819C338.6 86.6819 417.324 69.6628 468.615 66.8747C535.836 63.2207 585.755 77.6559 631.198 77.6559C673.906 76.8828 749.6 71.137 749.6 71.137V121.282Z" fill="#FFD7C9"/>
+</g>
+<defs>
+<filter id="filter0_fn_35_98" x="7.62939e-06" y="-2.28882e-05" width="909.2" height="204.882" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="23.8" result="effect1_foregroundBlur_35_98"/>
+<feTurbulence type="fractalNoise" baseFrequency="2 2" stitchTiles="stitch" numOctaves="3" result="noise" seed="7118" />
+<feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+<feComponentTransfer in="alphaNoise" result="coloredNoise1">
+<feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="effect1_foregroundBlur_35_98" in="coloredNoise1" result="noise1Clipped" />
+<feFlood flood-color="#FF5C22" result="color1Flood" />
+<feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+<feMerge result="effect2_noise_35_98">
+<feMergeNode in="effect1_foregroundBlur_35_98" />
+<feMergeNode in="color1" />
+</feMerge>
+</filter>
+</defs>
+</svg>

@@ -34,26 +34,27 @@ export default function Problem() {
 
   return (
     <section id="problem" className="w-full py-16 md:py-24 bg-white relative overflow-hidden">
-      {/* Left Edge Gradient Graphic (Frame 8.svg) - Stuck strictly to left edge without margin */}
-      <div className="absolute left-0 top-[260px] md:top-[300px] pointer-events-none z-0">
+      {/* Background Gradient - matches Figma node #38:116: full-width at y:362 in 689px section (52.5% from top) */}
+      {/* Left gradient sweep */}
+      <div className="absolute left-0 top-[52%] -translate-y-1/2 pointer-events-none z-0 w-[60%]">
         <Image
           src="/problem images/Frame 8.svg"
-          alt="Left Gradient Glow"
+          alt=""
           width={862}
           height={205}
-          className="w-auto h-[160px] sm:h-[205px] object-contain object-left"
+          className="w-full h-auto object-contain object-left"
           priority
         />
       </div>
 
-      {/* Right Edge Gradient Graphic (Frame 9.svg) - Stuck strictly to right edge without margin */}
-      <div className="absolute right-0 top-[260px] md:top-[300px] pointer-events-none z-0">
+      {/* Right gradient sweep */}
+      <div className="absolute right-0 top-[52%] -translate-y-1/2 pointer-events-none z-0 w-[60%]">
         <Image
           src="/problem images/Frame 9.svg"
-          alt="Right Gradient Glow"
+          alt=""
           width={862}
           height={205}
-          className="w-auto h-[160px] sm:h-[205px] object-contain object-right"
+          className="w-full h-auto object-contain object-right"
           priority
         />
       </div>
@@ -122,7 +123,7 @@ export default function Problem() {
         </div>
 
         {/* Footer Quote */}
-        <p className="mt-12 md:mt-16 text-[15px] sm:text-[16px] text-black/75 font-sans font-normal text-center leading-relaxed max-w-[996px]">
+        <p className="mt-14 text-[15px] sm:text-[16px] text-black/75 font-sans font-normal text-center leading-relaxed max-w-[996px]">
           &quot;The problem isn't a lack of funding - it's a lack of visibility. Governments react to complaints after damage is done, with no way to know which roads are most dangerous, or whether repairs actually worked.&quot;
         </p>
       </div>

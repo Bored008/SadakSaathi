@@ -22,34 +22,79 @@ export default function Hero() {
           {/* Center Content Container (Designed width ~739px) */}
           <div className="flex-1 max-w-[739px] mx-auto flex flex-col items-center text-center">
             {/* Main Heading */}
-            <h1 className="font-sans text-[32px] sm:text-[48px] md:text-[58px] lg:text-[66px] xl:text-[70px] font-normal leading-[1.15] tracking-[-0.05em] text-[#848484]">
+            <h1 className="relative font-[Inter] text-[32px] sm:text-[48px] md:text-[58px] lg:text-[66px] xl:text-[72px] font-medium leading-[1.15] tracking-[-0.05em] text-[#848484]">
+              {/* 
+                Glow layers — matching Figma nodes 27:46 and 27:50 exactly.
+                In Figma, these are absolutely positioned text layers with:
+                - Same font size as heading (~72px) squeezed into smaller boxes
+                - Color rgba(255,92,34,0.75)
+                - Overflow clipping + blur creates the soft glow
+                
+                Figma coordinates (relative to 739px container):
+                "Pothole": x=193, y=70, w=241, h=53, fontSize=71.68
+                "Costs a Life": x=322, y=156, w=370, h=55, fontSize=72.83
+                
+                We convert to relative/em units for responsiveness.
+                At xl (72px font): 193/739 ≈ 26.1%, 70/72 ≈ 0.97em
+              */}
+
+              {/* "Pothole" glow — Figma node 27:46 */}
+              <span
+                className="absolute pointer-events-none select-none"
+                aria-hidden="true"
+                style={{
+                  left: '26.1%',
+                  top: '0.97em',
+                  width: '3.35em',
+                  height: '0.74em',
+                  fontSize: 'inherit',
+                  letterSpacing: '-0.05em',
+                  fontWeight: 500,
+                  color: 'rgba(255, 92, 34, 0.75)',
+                  textAlign: 'center',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  filter: 'blur(20px)',
+                }}
+              >
+                Pothole
+              </span>
+
+              {/* "Costs a Life" glow — Figma node 27:50 */}
+              <span
+                className="absolute pointer-events-none select-none"
+                aria-hidden="true"
+                style={{
+                  left: '43.6%',
+                  top: '2.17em',
+                  width: '5.14em',
+                  height: '0.76em',
+                  fontSize: 'inherit',
+                  letterSpacing: '-0.05em',
+                  fontWeight: 500,
+                  color: 'rgba(255, 92, 34, 0.75)',
+                  textAlign: 'center',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  filter: 'blur(20px)',
+                }}
+              >
+                Costs a Life
+              </span>
+
               {/* Line 1: Every Pothole Detected */}
-              <span className="block sm:whitespace-nowrap">
+              <span className="relative block sm:whitespace-nowrap">
                 <span>Every </span>
-                <span className="relative inline-block text-[#FF5C22] font-medium">
-                  <span
-                    className="absolute inset-0 text-[#FF5C22]/70 blur-xl pointer-events-none select-none"
-                    aria-hidden="true"
-                  >
-                    Pothole
-                  </span>
-                  <span className="relative">Pothole</span>
-                </span>
+                <span className="text-[#FF5C22]">Pothole</span>
                 <span> Detected</span>
               </span>
 
               {/* Line 2: Before It Costs a Life */}
-              <span className="block sm:whitespace-nowrap mt-1">
+              <span className="relative block sm:whitespace-nowrap mt-1">
                 <span>Before It </span>
-                <span className="relative inline-block text-[#FF5C22] font-medium">
-                  <span
-                    className="absolute inset-0 text-[#FF5C22]/70 blur-xl pointer-events-none select-none"
-                    aria-hidden="true"
-                  >
-                    Costs a Life
-                  </span>
-                  <span className="relative">Costs a Life</span>
-                </span>
+                <span className="text-[#FF5C22]">Costs a Life</span>
               </span>
             </h1>
 

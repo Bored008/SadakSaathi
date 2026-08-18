@@ -33,7 +33,7 @@ export default function Problem() {
   ];
 
   return (
-    <section id="problem" className="w-full py-16 md:py-24 bg-white relative overflow-hidden">
+    <section id="problem" className="w-full bg-white relative overflow-hidden">
       {/* Background Gradient - matches Figma node #38:116: full-width at y:362 in 689px section (52.5% from top) */}
       {/* Left gradient sweep */}
       <div className="absolute left-0 top-[52%] -translate-y-1/2 pointer-events-none z-0 w-[60%]">

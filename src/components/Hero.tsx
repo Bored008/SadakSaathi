@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="home" className="w-full py-8 md:py-14 bg-white overflow-hidden">
+    <section id="home" className="w-full pt-4 md:pt-6 pb-0 bg-white overflow-hidden">
       <div className="max-w-[1409px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         {/* Top Row: Left Image + Center Content + Right Image */}
         <div className="w-full flex items-center justify-between gap-6 lg:gap-[85px]">

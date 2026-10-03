@@ -38,7 +38,7 @@ export default function Footer() {
       {/* ── Background image (must be z-0 so it sits BEHIND the white panel) ── */}
       <div className="absolute inset-x-0 bottom-0 top-[220px] sm:top-[200px] lg:top-[162px] z-1 pointer-events-none">
         <Image
-          src="/footer/footer.png"
+          src="/footer/footer.webp"
           alt=""
           fill
           className="object-cover object-top sm:object-center"
@@ -79,7 +79,7 @@ export default function Footer() {
             {/* Logo */}
             <div className="shrink-0">
               <Image
-                src="/footer/logofooter.png"
+                src="/footer/logofooter.webp"
                 alt="SadakSaathi Logo"
                 width={155}
                 height={72}

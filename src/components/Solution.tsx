@@ -129,7 +129,7 @@ const DetailPanel = ({ step }: { step: (typeof steps)[0] }) => (
     {/* Pothole Image */}
     <div className="relative w-full h-[200px] sm:h-[206px] rounded-[16px] overflow-hidden shrink-0">
       <Image
-        src="/Solution/pthole.png"
+        src="/Solution/pthole.webp"
         alt="Pothole detection example"
         fill
         className="object-cover"

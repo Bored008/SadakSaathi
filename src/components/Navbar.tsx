@@ -41,7 +41,7 @@ export default function Navbar() {
           {/* Brand Logo */}
           <Link href="/" className="flex items-center shrink-0">
             <Image
-              src="/icon/logo.png"
+              src="/icon/logo.webp"
               alt="SadakSaathi Logo"
               width={123}
               height={57}
